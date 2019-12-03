@@ -283,6 +283,10 @@ a.sc-link-light:hover {
   filter: invert(100%)
 }
 
+.sc-button-selected::before {
+  filter: invert(0);
+}
+
 .soundTitle__tag {
   color: #999;
   border: none !important;
