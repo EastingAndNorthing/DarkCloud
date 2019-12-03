@@ -277,7 +277,9 @@ a.sc-link-light:hover {
   background-color: #f50 !important;
 }
 
-.sc-button-medium.sc-button-camera:before {
+.sc-button-medium::before,
+.sc-button-small::before,
+.sc-button-large::before {
   filter: invert(100%)
 }
 
