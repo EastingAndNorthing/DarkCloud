@@ -1,5 +1,5 @@
-/* Partial fork from DarkCloud */
-/* https://github.com/iamdiogo/DarkCloud */
+/* DARKCLOUD: */
+/* This is where all the magic happens! */
 
 body{background-color:#0b0c0c !important;color: #fff !important; background-image: unset !important}
 .playControls__inner, .playControls__bg{background-color:#121414 !important;}
@@ -160,7 +160,6 @@ textarea, select, input{background: #000 !important}
 .quotaMeterWrapper{background-color: unset !important;} /* Fixes free upload limit background */
 .compactTrackList__moreLink:focus, .compactTrackList__moreLink:hover{background-color: black !important; color: white !important} /* Fixes stream playlist expand btn */
 
-/* Sick extra styles */
 
 .mobileApps,
 .statsBadge__upsell,
@@ -237,6 +236,11 @@ a.sc-link-light:hover {
   border-bottom: none !important;
 }
 
+.queue__itemsHeight {
+  background-color: #141518;
+  background-image: none !important;
+}
+
 .queue__panel {
   border-bottom: none;
   background-color: #141518;
@@ -250,7 +254,7 @@ a.sc-link-light:hover {
 }
 
 .commentForm__input {
-  background-color: #0d0d0d !important;
+  background-color: #0d0d0d73 !important;
   border: none !important;
 }
 
@@ -264,7 +268,8 @@ a.sc-link-light:hover {
 }
 
 .streamContext.playing {
-  filter: drop-shadow(0px 0px 90px #f506);
+  filter: drop-shadow(0px 0px 90px #f506); /* Orange */
+ filter: drop-shadow(0px 0px 90px #8CF7); /* Blue */
 }
 
 .streamContext .playButton {
@@ -305,7 +310,26 @@ a.sc-link-light:hover {
     background: linear-gradient(135deg, rgb(31, 38, 67) 0%, rgb(60, 22, 19) 100%) !important;
 }
 
+.compactTrackListItem.clickToPlay {
+  background-color: transparent;
+}
+.compactTrackListItem.clickToPlay.active {
+  background-color: rgba(0,0,0,0.5) !important;
+}
 
+.compactTrackListItem.clickToPlay.active .compactTrackListItem__additional {
+  background: none !important;
+}
+
+.dialog {
+  background: #212223 !important;
+  box-shadow: 0 0 30px -10px black
+}
+
+.dialog__arrow {
+  background: #212223 !important;
+  border-color: #212223;
+}
 
 
 
